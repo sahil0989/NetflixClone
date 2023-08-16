@@ -5,3 +5,9 @@
 body {
   background-color: black;
 }
+
+@media screen and (width <= 450px) {
+  .arrowBtn {
+    display: none;
+  }
+}
