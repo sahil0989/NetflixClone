@@ -78,13 +78,11 @@ export default function MoviePage() {
                       Watch
                     </button>
                   </div>
-                  <div className='sm:col-span-2 col-span-3 flex justify-end font-medium text-sm'>
-                    <Link to={"/home"}>
+                    <a href='/home' className='sm:col-span-2 col-span-3 flex justify-end font-medium text-sm'>
                       <button className="mx-1 hover:bg-red-700 transition border-2 border-red-600 rounded-full flex-row gap-4 w-full sm:py-3 py-2">
                         Back
                       </button>
-                    </Link>
-                  </div>
+                    </a>
 
                 </div>
               </div>
