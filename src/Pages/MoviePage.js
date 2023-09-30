@@ -64,30 +64,28 @@ export default function MoviePage() {
                     <button className='w-10 h-10 flex flex-col rounded-lg bg-white hover:bg-red-600 bg-opacity-20 items-center justify-center'>
                       <FaShareAlt />
                     </button>
-                    
+
                   </div>
 
                   <div className='col-span-2 flex-col font-medium text-sm'>
                     <p>Language : {' '}<span className='ml-2 truncate'>{movies?.lang}</span></p>
-                    
+
                   </div>
                   <p onClick={saveShow} className='scale-125'>
-                      {like ? <AiFillHeart /> : <AiOutlineHeart />}</p>
+                    {like ? <AiFillHeart /> : <AiOutlineHeart />}</p>
                   <div className='sm:col-span-2 col-span-3 flex justify-end font-medium text-sm'>
                     <button className="mx-1 hover:bg-red-700 transition border-2 border-red-600 rounded-full flex-row gap-4 w-full sm:py-3 py-2">
                       Watch
                     </button>
                   </div>
                   <div className='sm:col-span-2 col-span-3 flex justify-end font-medium text-sm'>
-                    <button className="mx-1 hover:bg-red-700 transition border-2 border-red-600 rounded-full flex-row gap-4 w-full sm:py-3 py-2">
                     <Link to={"/home"}>
-
-                      Back
-
-                  </Link>
-                    </button>
+                      <button className="mx-1 hover:bg-red-700 transition border-2 border-red-600 rounded-full flex-row gap-4 w-full sm:py-3 py-2">
+                        Back
+                      </button>
+                    </Link>
                   </div>
-                  
+
                 </div>
               </div>
             </div>
